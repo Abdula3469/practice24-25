@@ -143,10 +143,6 @@ plt.show()
 print("Оценка результатов")
 
 
-test_loss, test_acc = model.evaluate(test_images, test_labels, verbose=2)
-print(f"\nТочность на тестовых данных: {test_acc:.2%}")
-
-
 def plot_image(i, predictions_array, true_label, img):
     true_label, img = true_label[i], img[i]
     plt.grid(False)
